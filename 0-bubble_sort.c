@@ -1,3 +1,5 @@
+#include "sort.h"
+
 /**
  * bubble_sort - sort array elements from minimum to maximum value
  * @array: The array of integers to sort
@@ -29,7 +31,7 @@ void bubble_sort(int *array, size_t size)
 }
 
 /**
- * swap_ints - Swap two integers
+ * swap_int - Swap two integers
  * @a: first integer
  * @b: second integer
  */
