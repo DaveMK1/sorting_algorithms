@@ -30,12 +30,10 @@ int lomuto_partition(int *array, ssize_t low, ssize_t high, size_t size)
 	ssize_t i, j;
 
 	i = low - 1;
-	j = low;
+	pivot = array[high];
 
 	for (j = low; j <= high - 1; j++)
 	{
-		pivot = array[high];
-
 		if (array[j] < pivot)
 		{
 			i++;
@@ -84,8 +82,8 @@ void quicksort_imp(int *array, ssize_t low, ssize_t high, size_t size)
  */
 void quick_sort(int *array, size_t size)
 {
-	quicksort_imp(array, 0, size - 1, size);
-
 	if (array == NULL || size < 2)
 		return;
+
+	quicksort_imp(array, 0, size - 1, size);
 }
