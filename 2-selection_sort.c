@@ -26,22 +26,22 @@ void selection_sort(int *array, size_t size)
 
 		if (i != min_index)
 		{
-			swap_int(array + i, array + min_index);
+			swap(array + i, array + min_index);
 			print_array(array, size);
 		}
 	}
 }
 
 /**
- * swap_int - Swap two integers
- * @a: First integer to swap
- * @b: Second integer to swap
+ * swap - Swap two integers
+ * @i: First integer to swap
+ * @j: Second integer to swap
  */
-void swap_int(int *a, int *b)
+void swap(int *i, int *j)
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *i;
+	*i = *j;
+	*j = tmp;
 }
