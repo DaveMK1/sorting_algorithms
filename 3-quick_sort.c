@@ -5,7 +5,7 @@
  * @i: First integer to swap
  * @j: Second integer to swap
  */
-void swap(int *k, int *l)
+void swap(int *i, int *j)
 {
 	int tmp;
 
