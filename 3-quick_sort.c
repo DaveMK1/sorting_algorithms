@@ -30,6 +30,7 @@ int lomuto_partition(int *array, ssize_t low, ssize_t high, size_t size)
 	ssize_t i, j;
 
 	i = low - 1;
+	j = low;
 
 	for (j = low; j <= high - 1; j++)
 	{
