@@ -2,16 +2,16 @@
 
 /**
  * swap - Swap integers
- * @k: First integer to swap
- * @l: Second integer to swap
+ * @i: First integer to swap
+ * @j: Second integer to swap
  */
 void swap(int *k, int *l)
 {
 	int tmp;
 
-	tmp = *k;
-	*k = *l;
-	*l = tmp;
+	tmp = *i;
+	*i = *j;
+	*j = tmp;
 }
 
 /**
